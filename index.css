@@ -1,0 +1,1371 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=Jost:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: aliceblue;
+}
+html{
+    scroll-behavior: smooth;
+}
+ /* resume button style */
+.download{
+    padding: 0.8rem;
+    }
+
+.download a{
+    color: black;
+    padding: 0.5rem;
+    border-color: black;
+    border-style: solid;
+    border-width: 0.1rem;
+    text-decoration: none;
+    font-family: 'Jost', sans-serif;
+}
+.download a:hover{
+    background-color: black;
+    color: aliceblue;
+}
+
+#navbar{
+    background-color: rgb(219, 232, 239);
+    color: black;
+    /* position: f; */
+}
+#navtext{
+    color: black;
+    font-family: 'Jost', sans-serif;
+
+}
+/* GLOWING STYLE */
+.buttons{
+    margin: 0.5rem;
+}
+.buttons a{
+    font-family: 'Jost', sans-serif;
+}
+.buttons a:hover{
+    color: black;
+    text-decoration: none;
+}
+:root {
+    --clr-one: rgb(0, 0, 0);
+    --clr-bg: #1d1e22;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  .neon-button {
+    font-size: 1rem;
+  
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    border-radius: 0.25em;
+    position: relative;
+  }
+  
+  .neon-button__1 {
+    color: var(--clr-one);
+    border: var(--clr-one) 0.125em solid;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em --clr-one;
+    box-shadow: inset 0 0 0.5em 0 var(--clr-one), 0 0 0.5em 0 var(--clr-one);
+  }
+  
+  .neon-button::before {
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: perspective(1.5em) rotateX(45deg) scale(0.8, 0.3);
+    filter: blur(1.5em);
+    opacity: 0.7;
+    pointer-events: none;
+  }
+  
+  .neon-button.active::before {
+    animation: scalingShadow 0.5s ease-in-out;
+  }
+  
+  @keyframes scalingShadow {
+    0% {
+      top: 120%;
+      transform: perspective(1.5em) rotateX(45deg) scale(0.8, 0.3);
+    }
+    50% {
+      top: 165%;
+      transform: perspective(1.5em) rotateX(45deg) scale(0.75, 0.3);
+    }
+    100% {
+      top: 120%;
+      transform: perspective(1.5em) rotateX(45deg) scale(0.8, 0.3);
+    }
+  }
+  
+  .neon-button__1::before {
+    background: var(--clr-one);
+  }
+  
+  .neon-button::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity 100ms linear;
+  }
+  
+  .neon-button__1::after {
+    box-shadow: 0 0 2em 0.5em var(--clr-one);
+    background-color: var(--clr-one);
+  }
+  
+
+  
+
+  
+  @keyframes animate {
+    0% {
+      transform: translateY(0%);
+    }
+    50% {
+      transform: translateY(-40%);
+    }
+    100% {
+      transform: translateY(0%);
+    }
+  }
+
+/* darkbox styles */
+/* .darkbox{
+    height: 42.5vw;
+    width: 50vw;
+    background-color: rgb(219, 232, 239);
+} */
+.namediv{
+    color: black;
+}
+
+.i{
+    font-weight: 800;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .darkbox{
+        height: 42.5vw;
+        width: 50vw;
+        background-color: rgb(219, 232, 239);
+    }
+    .name{
+        height: 39.9rem;
+    }
+    .namediv{
+        position: absolute;
+        left: 31%;
+        top: 40%;
+
+    }
+    .myname{
+        font-weight: 800;
+        font-size: 60px;
+        font-family: 'Jost', sans-serif;
+        font-weight: 700;
+    letter-spacing: 5px;
+    }
+    .namediv h6{
+        margin-left: 38%;
+        color: rgb(16, 97, 163);
+        letter-spacing: 10px;
+        font-weight: 800;
+        font-family: 'Jost', sans-serif;
+
+    }
+    .namediv h5{
+        margin-left: 28%;
+    }
+    .vlsi{
+        text-decoration-line: underline;
+        color: rgb(16, 97, 163);
+        font-family: 'Jost', sans-serif;
+        font-weight: 800;
+    }
+    @keyframes vlsi{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+    .vlsi{animation:vlsi 5s cubic-bezier(.215,.61,.355,1.000) both}
+
+    .image{
+        width: 50vw;
+        height: 30rem;
+    }
+    #aboutblock{
+        display: flex;
+    }
+    .text{
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+    .text p{
+        color: #676565;
+        font-family: 'Jost', sans-serif;
+        font-size: large;
+    }
+    .text h1{
+        font-weight: 800;
+        font-size: 60px;
+        font-family: 'Jost', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        color: black;
+    }
+    .details{
+        padding-left: 2rem;
+        color: #676565;
+
+    }
+    p{
+        font-family: 'Jost', sans-serif;
+        color: #454343;
+        font-size: 20px;
+    }
+    .p1{
+        padding-left: 10.5rem;
+    }
+    .p2{
+        padding-left: 7.1rem;
+    }
+    .p3{
+        padding-left: 9.4rem;
+    }
+    .p4{
+        padding-left: 8.6rem;
+    }
+    .p5{
+        padding-left: 10.7rem;
+    }
+    .p6{
+        padding-left: 10.2rem;
+    }
+    #third{
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Jost', sans-serif;
+
+    }
+    #fourth{
+        margin-left: 35rem;
+        margin-top: 2rem;
+        font-family: 'Jost', sans-serif;
+    }
+
+    .third2 h2{
+        font-weight: bolder;
+        font-family: 'Jost', sans-serif;
+        color: rgb(16, 97, 163);
+        margin-bottom: 2rem;
+    }
+    .fourth2 h2{
+        font-weight: bolder;
+        font-family: 'Jost', sans-serif;
+        color: rgb(16, 97, 163);
+        margin-bottom: 2rem;
+    }
+    .third21{
+        display: flex;
+        width: 47rem;
+    }
+    .fourth21{
+        display: flex;
+    }
+    .fourth21 h4{
+        margin-top: 0.3rem;
+        margin-left: 1rem;
+        font-weight: 600;
+    }   
+    #third a{
+        text-decoration: none;
+        color: black;
+        font-size: larger;
+        line-height: 2.5rem;
+        font-weight: bold;
+    }
+    .third21 img{
+        width: 3rem;
+        margin-bottom: 8rem;
+    }
+    .fourth21 img{
+        width: 2.5rem;
+        /* margin-bottom: 8rem; */
+    }
+    .third211{
+        margin-left: 1rem;
+        /* margin-top: ; */
+    }
+    .year{
+        color: rgb(16, 97, 163);
+        font-weight: bold;
+    }
+    .third211 p{
+        color: #676565;
+    }
+    hr{
+        margin-top: 0px;
+    }
+    .box
+{
+  background:#fff;
+  width:300px;
+  height:380px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  flex-direction:column;
+  box-shadow:0 30px 60px rgba(0,0,0,.4);
+  transition: transform .2s;
+  margin-right: 1rem;
+  margin-bottom: 2rem;
+}
+.box .percent
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percent svg
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percent svg circle
+{
+  width:150px;
+  height:150px;
+  fill:none;
+  stroke-width:10;
+  stroke:#000;
+  transform:translate(5px,5px);
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+}
+.box .percent svg circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percent svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 87) / 100);
+  stroke:#03a9f4;
+}
+.box .percent .num
+{
+  top:1rem;
+  left:3px;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  color:#111;
+}
+.box .percent .num h2
+{
+  font-size:48px;
+}
+.box .percent .num h2 span
+{
+  font-size:24px;
+}
+.box .text
+{
+  padding: 10px 0 0;
+  color:#999;
+  font-weight:700;
+  letter-spacing:1px;
+}
+.progressbars{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#fifth{
+    font-family: 'Jost', sans-serif;
+}
+.heading{
+    margin-left: 35rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    color: rgb(16, 97, 163);
+    margin-bottom: 2rem;
+}
+#python{
+    margin-top: 2rem;
+    margin-left: 38rem;
+}
+#last{
+    margin-left: 35rem;
+    margin-top: 2rem;
+    font-family: 'Jost', sans-serif;
+}
+.data{
+    display: flex;
+    margin-left: 19.2rem;
+    background: #fff;
+    width: 59rem;
+    height: 15rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,.4);
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.aboutproj a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(16, 97, 163);
+}
+.outputs{
+    display: flex;
+    justify-content: space-around;
+}
+#projects img{
+    width: 2.5rem;
+    margin-bottom: 7rem;
+    margin-right: 1.5rem;
+}
+#projects h2{
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    color: rgb(16, 97, 163);
+    margin-bottom: 2rem;
+    margin-left: 35rem;
+    margin-top: 1.5rem;
+}
+.aboutproj{
+    margin-top: 2rem;
+}
+.contacth{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    color: rgb(16, 97, 163);
+}
+.addresscard{
+    margin-top: 3rem;
+    background: #fff;
+    width: 22rem;
+    height: 26rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,.4);
+    /* padding-left: 2rem; */
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+.addresscard img{
+    height: 5rem;
+    margin-top: 3rem;
+}
+.addresscard h3{
+    font-family: 'Jost', sans-serif;
+    margin-top: 1rem;
+}
+.adddet{
+    margin-top: 7rem;
+}
+.adddet a{
+    color: black;
+}
+#contactblock{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.footer{
+    height: 30rem;
+    width: 100%;
+    font-family: 'Jost', sans-serif;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer h3{
+    color: whitesmoke;
+}
+.footer p{
+    color: #a2a2a2;
+}
+.f1, .f2{
+    width: 19rem;
+}
+.f1 h3{
+    text-align: center;
+    margin-right: 2.2rem;
+}
+.f2 a{
+    font-size: large;
+    font-weight: bold;
+    color: #a2a2a2;
+    line-height: 3rem;
+    text-decoration: none;
+
+}
+.f2{
+    margin-left: 1rem;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 5rem;
+    width: 16rem;
+}
+.f3 a{
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+.footer img{
+    height: 2rem;
+}
+.f3 img{
+    margin-left: 0.5rem;
+}
+.f3 span{
+    color: white;
+    margin-left: 0.5rem;
+    font-size:x-large;
+    color: #a2a2a2;
+}
+.f3 h3{
+    margin-left: 3.5rem;
+}
+.lastsec{
+    background-color: black;
+    padding-bottom: 1rem;
+
+}
+.lastsec h4{
+    color: #a9a6a6;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+
+}
+
+
+
+}
+/* FOR TABLET */
+@media only screen and (min-width: 768px ) and (max-width: 992px) {
+    .darkbox{
+        height: 61.5vw;
+        width: 50vw;
+        background-color: rgb(219, 232, 239);
+    }
+    .name{
+        height: 35.7rem;
+    }
+    .namediv{
+        position: absolute;
+        left: 31%;
+        top: 40%;
+
+    }
+    .myname{
+        font-weight: 800;
+        font-size: 60px;
+        font-family: 'Jost', sans-serif;
+        font-weight: 700;
+    letter-spacing: 5px;
+    }
+    .namediv h6{
+        margin-left: 38%;
+        color: rgb(16, 97, 163);
+        letter-spacing: 10px;
+        font-weight: 800;
+        font-family: 'Jost', sans-serif;
+
+    }
+    .namediv h5{
+        margin-left: 28%;
+    }
+    .vlsi{
+        text-decoration-line: underline;
+        color: rgb(16, 97, 163);
+        font-family: 'Jost', sans-serif;
+        font-weight: 800;
+    }
+    @keyframes vlsi{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+    .vlsi{animation:vlsi 5s cubic-bezier(.215,.61,.355,1.000) both}
+
+    .image{
+        width: 50vw;
+        height: 41rem;
+    }
+    #aboutblock{
+        display: flex;
+    }
+    .text{
+        padding-top: 1rem;
+        padding-left: 2rem;
+    }
+    .text p{
+        color: #676565;
+        font-family: 'Jost', sans-serif;
+        font-size: large;
+    }
+    .text h1{
+        font-weight: 800;
+        font-size: 60px;
+        font-family: 'Jost', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        color: black;
+    }
+    .details{
+        padding-left: 2rem;
+        color: #676565;
+
+    }
+    p{
+        font-family: 'Jost', sans-serif;
+        color: #454343;
+        font-size: 20px;
+    }
+    /* education block */
+    #third{
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-evenly;
+        font-family: 'Jost', sans-serif;
+
+    }
+    .third2 h2{
+        font-weight: bolder;
+        font-family: 'Jost', sans-serif;
+        color: rgb(16, 97, 163);
+        margin-bottom: 2rem;
+    }
+    .third21{
+        display: flex;
+        width: 47rem;
+
+    }
+    #third a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        line-height: 2.5rem;
+        font-weight: bold;
+    }
+    .third21 img{
+        width: 3rem;
+        margin-bottom: 8rem;
+    }
+    .third211{
+        margin-left: 1rem;
+        /* margin-top: ; */
+    }
+    .year{
+        color: rgb(16, 97, 163);
+        font-weight: bold;
+    }
+    .third211 p{
+        color: #676565;
+    }
+    hr{
+        margin-top: 0px;
+    }
+    #fourth{
+        margin-left: 5rem;
+        margin-top: 2rem;
+        font-family: 'Jost', sans-serif;
+    }
+    .fourth2 h2{
+        font-weight: bolder;
+        font-family: 'Jost', sans-serif;
+        color: rgb(16, 97, 163);
+        margin-bottom: 2rem;
+        margin-left: 7rem;
+    }
+    .fourth21 img{
+        width: 2.5rem;
+        /* margin-bottom: 8rem; */
+    }
+    .fourth21{
+        display: flex;
+    }
+    .fourth21 h4{
+        margin-top: 0.3rem;
+        margin-left: 1rem;
+        font-weight: 600;
+    }   
+    .fourth21 img{
+        width: 2.5rem;
+        /* margin-bottom: 8rem; */
+    }
+
+    .box
+{
+  background:#fff;
+  width:300px;
+  height:380px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  flex-direction:column;
+  box-shadow:0 30px 60px rgba(0,0,0,.4);
+  transition: transform .2s;
+}
+.box .percent
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percent svg
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percent svg circle
+{
+  width:150px;
+  height:150px;
+  fill:none;
+  stroke-width:10;
+  stroke:#000;
+  transform:translate(5px,5px);
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+}
+.box .percent svg circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percent svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 87) / 100);
+  stroke:#03a9f4;
+}
+.box .percent .num
+{
+  top:1rem;
+  left:3px;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  color:#111;
+}
+.box .percent .num h2
+{
+  font-size:48px;
+}
+.box .percent .num h2 span
+{
+  font-size:24px;
+}
+.box .text
+{
+  padding: 10px 0 0;
+  color:#999;
+  font-weight:700;
+  letter-spacing:1px;
+}
+.progressbars{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#fifth{
+    font-family: 'Jost', sans-serif;
+}
+.heading{
+    margin-left: 11rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    color: rgb(16, 97, 163);
+    margin-bottom: 2rem;
+}
+#python{
+    margin-left: 21rem;
+}
+.box{
+    margin-bottom: 2rem;
+}
+#last{
+    margin-left: 18rem;
+    margin-top: 2rem;
+    font-family: 'Jost', sans-serif;
+}
+.data{
+    display: flex;
+    margin-left: 1rem;
+    background: #fff;
+    width: 56rem;
+    height: 15rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,.4);
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.aboutproj a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(16, 97, 163);
+}
+.outputs{
+    display: flex;
+    justify-content: space-around;
+}
+#projects img{
+    width: 2.5rem;
+    margin-bottom: 7rem;
+    margin-right: 1.5rem;
+}
+#projects h2{
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    color: rgb(16, 97, 163);
+    margin-bottom: 2rem;
+    margin-left: 21rem;
+    margin-top: 1.5rem;
+}
+.aboutproj{
+    margin-top: 2rem;
+}
+.contacth{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    color: rgb(16, 97, 163);
+}
+.addresscard{
+    margin-top: 3rem;
+    background: #fff;
+    width: 22rem;
+    height: 26rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,.4);
+    /* padding-left: 2rem; */
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+.addresscard img{
+    height: 5rem;
+    margin-top: 3rem;
+}
+.addresscard h3{
+    font-family: 'Jost', sans-serif;
+    margin-top: 1rem;
+}
+.adddet{
+    margin-top: 7rem;
+}
+.adddet a{
+    color: black;
+}
+#contactblock{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.lastsec{
+    background-color: black;
+}
+.footer{
+    height: 30rem;
+    width: 100%;
+    font-family: 'Jost', sans-serif;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer h3{
+    color: whitesmoke;
+}
+.footer p{
+    color: #a2a2a2;
+}
+.f1, .f2{
+    width: 19rem;
+}
+.f1 h3{
+    text-align: center;
+    margin-right: 2.2rem;
+}
+.f2 a{
+    font-size: large;
+    font-weight: bold;
+    color: #a2a2a2;
+    line-height: 3rem;
+    text-decoration: none;
+
+}
+.f2{
+    margin-left: 1rem;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 5rem;
+    width: 16rem;
+}
+.f3 a{
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+.footer img{
+    height: 2rem;
+}
+.f3 img{
+    margin-left: 0.5rem;
+}
+.f3 span{
+    color: white;
+    margin-left: 0.5rem;
+    font-size:x-large;
+    color: #a2a2a2;
+}
+.f3 h3{
+    margin-left: 3.5rem;
+}
+.f1 {
+    display: none;
+}
+.lastsec{
+    background-color: black;
+    padding-bottom: 1rem;
+
+}
+.lastsec h4{
+    color: #a9a6a6;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+
+}
+
+}
+@media only screen and (max-width: 600px ) {
+    .name{
+        height: 25.7rem;
+    }
+    .namediv{
+        position: absolute;
+        left: 15%;
+        top: 30%;
+
+    }
+    .namediv h5{
+        margin-left: 15%;
+    }
+    .myname{
+        font-weight: 800;
+        font-size: 40px;
+        font-family: 'Jost', sans-serif;
+    letter-spacing: 1px;
+    }
+    .namediv h6{
+        margin-left: 30%;
+        color: rgb(16, 97, 163);
+        letter-spacing: 10px;
+        font-weight: 800;
+        font-family: 'Jost', sans-serif;
+
+    }
+    .vlsi{
+        text-decoration-line: underline;
+        color: rgb(16, 97, 163);
+        font-family: 'Jost', sans-serif;
+        font-weight: 600;
+    }
+    @keyframes vlsi{0%{letter-spacing:-.5em;opacity:0}40%{opacity:.6}100%{opacity:1}}
+    .vlsi{animation:vlsi 5s cubic-bezier(.215,.61,.355,1.000) both}
+
+    .image{
+        width: 30rem;
+        height: 20rem;
+    }
+
+    .text{
+        padding-top: 1rem;
+        padding-left: 1rem;
+    }
+    .text p{
+        color: #676565;
+        font-family: 'Jost', sans-serif;
+        font-size: large;
+    }
+    .text h1{
+        font-weight: 800;
+        font-size: 60px;
+        font-family: 'Jost', sans-serif;
+        font-weight: 700;
+        letter-spacing: 5px;
+        color: black;
+        text-align: center;
+    }
+    .details{
+        padding-left: 1rem;
+        color: #676565;
+
+    }
+    .details p{
+        font-size: 20px;
+        font-family: 'Jost', sans-serif;
+
+    }
+    .p{
+        color: black;
+    }
+    .p1,.p2,.p3,.p4,.p5,.p6{
+        color: #474646;
+        text-align: center;
+    }
+    /* education block */
+    #third{
+        margin-top: 4rem;
+        /* display: flex; */
+        /* justify-content: space-evenly; */
+        font-family: 'Jost', sans-serif;
+        margin-left: 2rem;
+
+    }
+    .third2 h2{
+        font-weight: bolder;
+        font-family: 'Jost', sans-serif;
+        color: rgb(16, 97, 163);
+        margin-bottom: 2rem;
+        margin-left: 9rem;
+    }
+    .third21{
+        display: flex;
+        width: 24rem;
+
+    }
+    #third a{
+        text-decoration: none;
+        color: black;
+        font-size: large;
+        line-height: 2.5rem;
+        font-weight: bold;
+    }
+    .third21 img{
+        width: 3rem;
+        margin-bottom: 8rem;
+    }
+    .third211{
+        margin-left: 1rem;
+        /* margin-top: ; */
+    }
+    .year{
+        color: rgb(16, 97, 163);
+        font-weight: bold;
+    }
+    .third211 p{
+        color: #676565;
+
+    }
+    hr{
+        margin-top: 0px;
+    }
+    .links{
+        display: none;
+    }
+    #fifth, #fourth{
+        font-family: 'Jost', sans-serif;
+    }
+    .fourth21 img{
+        width: 2.5rem;
+    }
+    .fourth21{
+        display: flex;
+    }
+    .fourth21 h4{
+        margin-top: 0.3rem;
+        margin-left: 1rem;
+        font-weight: 600;
+    }  
+    .fourth2 h2{
+        font-weight: bolder;
+        font-family: 'Jost', sans-serif;
+        color: rgb(16, 97, 163);
+        margin-bottom: 2rem;
+        margin-left: 8rem;
+    }
+    .fourth2{
+        margin-left: 1rem;
+    }
+    .box
+{
+  background:#fff;
+  width:300px;
+  height:380px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  flex-direction:column;
+  box-shadow:0 30px 60px rgba(0,0,0,.4);
+  transition: transform .2s;
+  margin-bottom: 2rem;
+}
+.box .percent
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percent svg
+{
+  width:150px;
+  height:150px;
+  position:relative;
+}
+.box .percent svg circle
+{
+  width:150px;
+  height:150px;
+  fill:none;
+  stroke-width:10;
+  stroke:#000;
+  transform:translate(5px,5px);
+  stroke-dasharray:440;
+  stroke-dashoffset:440;
+  stroke-linecap:round;
+}
+.box .percent svg circle:nth-child(1)
+{
+  stroke-dashoffset:0;
+  stroke:#f3f3f3;
+}
+.box .percent svg circle:nth-child(2)
+{
+  stroke-dashoffset:calc(440 - (440 * 87) / 100);
+  stroke:#03a9f4;
+}
+.box .percent .num
+{
+  top:1rem;
+  left:3px;
+  width:100%;
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:absolute;
+  color:#111;
+}
+.box .percent .num h2
+{
+  font-size:48px;
+}
+.box .percent .num h2 span
+{
+  font-size:24px;
+}
+.box .text
+{
+  padding: 10px 0 0;
+  color:#999;
+  font-weight:700;
+  letter-spacing:1px;
+}
+.progressbars{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#fifth{
+    font-family: 'Jost', sans-serif;
+}
+.heading{
+    margin-left: 9rem;
+    margin-top: 2rem;
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    color: rgb(16, 97, 163);
+    margin-bottom: 2rem;
+}
+#python{
+    /* margin-top: 2rem; */
+    margin-left: 5.8rem;
+}
+#last{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-family: 'Jost', sans-serif;
+}
+.data{
+    display: flex;
+    margin-left: 6px;
+    background: #fff;
+    width: 29.5rem;
+    height: 20rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,.4);
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+}
+.aboutproj a{
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+    color: rgb(16, 97, 163);
+}
+.outputs{
+    display: flex;
+    justify-content: space-around;
+}
+#projects img{
+    width: 2.5rem;
+    margin-bottom: 11rem;
+    margin-right: 1.5rem;
+}
+#projects h2{
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    color: rgb(16, 97, 163);
+    margin-bottom: 2rem;
+    margin-left: 8rem;
+    margin-top: 1.5rem;
+}
+.aboutproj{
+    margin-top: 2rem;
+}
+.contacth{
+    text-align: center;
+    font-weight: bolder;
+    font-family: 'Jost', sans-serif;
+    color: rgb(16, 97, 163);
+}
+.addresscard{
+    margin-top: 3rem;
+    background: #fff;
+    width: 22rem;
+    height: 26rem;
+    box-shadow: 0 30px 60px rgba(0,0,0,.4);
+    /* padding-left: 2rem; */
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+.addresscard img{
+    height: 5rem;
+    margin-top: 3rem;
+}
+.addresscard h3{
+    font-family: 'Jost', sans-serif;
+    margin-top: 1rem;
+}
+.adddet{
+    margin-top: 7rem;
+}
+.adddet a{
+    color: black;
+}
+#contactblock{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.footer{
+    background-color: black;
+    height: 28rem;
+    width: 100%;
+    font-family: 'Jost', sans-serif;
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer h3{
+    color: whitesmoke;
+}
+.footer p{
+    color: #a2a2a2;
+}
+.f2{
+    width: 19rem;
+}
+.f1 {
+    display: none;
+}
+.f2 a{
+    font-size: large;
+    font-weight: bold;
+    color: #a2a2a2;
+    line-height: 3rem;
+    text-decoration: none;
+
+}
+.f2{
+    margin-left: 1rem;
+}
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    margin-right: 5rem;
+    width: 16rem;
+}
+.f3 a{
+    text-decoration: none;
+    margin-bottom: 5rem;
+}
+.footer img{
+    height: 2rem;
+}
+.f3 img{
+    margin-left: 0.5rem;
+}
+.f3 span{
+    color: white;
+    margin-left: 0.5rem;
+    font-size:x-large;
+    color: #a2a2a2;
+}
+.f3 h3{
+    margin-left: 3.5rem;
+}
+.lastsec{
+    background-color: black;
+    padding-bottom: 1rem;
+
+}
+.lastsec h4{
+    color: #a9a6a6;
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+
+}
+}
+
+
